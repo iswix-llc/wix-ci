@@ -21,3 +21,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: wixtoolset/wix
+
+ - name: Examine
+        shell: cmd
+        run: dir
