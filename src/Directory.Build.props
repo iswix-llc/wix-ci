@@ -33,16 +33,14 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <Authors>WiX Toolset Team</Authors>
-    <Company>WiX Toolset</Company>
+    <Authors>IsWiX LLC</Authors>
+    <Company>IsWiX LLC</Company>
     <Copyright>Copyright (c) .NET Foundation and contributors. All rights reserved.</Copyright>
-
-	  <PackageEulaSource>$(RootFolder)OSMFEULA.txt</PackageEulaSource>
-	  <PackageLicenseFile>OSMFEULA.txt</PackageLicenseFile>
+	  <PackageEulaSource>$(RootFolder)LICENSE.TXT/PackageEulaSource>
+	  <PackageLicenseFile>LICENSE.TXT</PackageLicenseFile>
 	  <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-
-    <Product>WiX Toolset</Product>
-    <ProjectUrl>https://wixtoolset.org/</ProjectUrl>
+    <Product>IsWiX Toolset</Product>
+    <ProjectUrl>https://github.com/iswix-llc/</ProjectUrl>
     <PackageIcon>icon.png</PackageIcon>
     <PackageIconSource>$(MSBuildThisFileDirectory)internal\images\icon.png</PackageIconSource>
     <PackageTags>WiX MSI install setup</PackageTags>
