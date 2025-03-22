@@ -15,7 +15,7 @@ jobs:
       - name: Checkout iswix code
         uses: actions/checkout@v4
         with:
-          path: wix-ci
+          path: ../wix-ci
           fetch-depth: 0
       - name: Checkout wix code
         uses: actions/checkout@v4
