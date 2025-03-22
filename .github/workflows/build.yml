@@ -22,6 +22,7 @@ jobs:
         with:
           repository: wixtoolset/wix
 
- - name: Examine
+      - name: Examine
         shell: cmd
         run: dir
+        
