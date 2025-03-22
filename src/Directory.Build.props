@@ -37,7 +37,7 @@
     <Company>WiX Toolset</Company>
     <Copyright>Copyright (c) .NET Foundation and contributors. All rights reserved.</Copyright>
 
-    <PackageEulaSource>$(RootFolder)LICENSE.txt</PackageEulaSource>
+    <PackageEulaSource>LICENSE.txt</PackageEulaSource>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
 
