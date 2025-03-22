@@ -12,16 +12,15 @@ jobs:
       SignBuild: false
       WixOfficialBuild: false
     steps:
+      - name: Checkout wix code
+        uses: actions/checkout@v4
+        with:
+          repository: wixtoolset/wix
       - name: Checkout iswix code
         uses: actions/checkout@v4
         with:
           path: wix-ci
           fetch-depth: 0
-      - name: Checkout wix code
-        uses: actions/checkout@v4
-        with:
-          repository: wixtoolset/wix
-          path: wix
       - name: Examine
         shell: cmd
         run: dir
