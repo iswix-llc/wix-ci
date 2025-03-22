@@ -16,6 +16,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: wixtoolset/wix
+          fetch-depth: 0
       
       - name: Checkout iswix code
         uses: actions/checkout@v4
