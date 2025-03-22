@@ -7,7 +7,7 @@
     <description>$description$</description>
     <authors>$authors$</authors>
     <icon>icon.png</icon>
-    <license type="file">$eulaFile$</license>
+    <license type="file">LICENSE.txt</license>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <tags>$packageTags$</tags>
     <copyright>$copyright$</copyright>

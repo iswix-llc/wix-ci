@@ -6,7 +6,7 @@
     <title>$title$</title>
     <description>$description$</description>
     <authors>$authors$</authors>
-    <license type="file">$eulaFile$</license>
+    <license type="file">LICENSE.txt</license>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <tags>$packageTags$</tags>
     <copyright>$copyright$</copyright>
