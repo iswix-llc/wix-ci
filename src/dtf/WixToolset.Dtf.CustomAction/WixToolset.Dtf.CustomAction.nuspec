@@ -7,8 +7,8 @@
     <description>$description$</description>
     <authors>$authors$</authors>
     <icon>icon.png</icon>
-    <license type="file">LICENSE.TXT</license>
-    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="expression">MS-RL</license>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <tags>$packageTags$ CustomActions</tags>
     <copyright>$copyright$</copyright>
     <projectUrl>$projectUrl$</projectUrl>
@@ -17,9 +17,7 @@
       <dependency id="WixToolset.Dtf.WindowsInstaller" version="$version$" />
     </dependencies>
   </metadata>
-
   <files>
-    <file src="$eulaTxt$" />
     <file src="$iconPng$" />
     <file src="$projectFolder$\$id$.targets" target="build" />
     <file src="net472\WixToolset.Dtf.MakeSfxCA.exe" target="tools" />

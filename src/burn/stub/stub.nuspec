@@ -6,16 +6,14 @@
     <title>$title$</title>
     <description>$description$</description>
     <authors>$authors$</authors>
-    <license type="file">LICENSE.TXT</license>
+    <license type="expression">MS-RL</license>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <tags>$packageTags$</tags>
     <copyright>$copyright$</copyright>
     <projectUrl>$projectUrl$</projectUrl>
     <repository type="$repositorytype$" url="$repositoryurl$" commit="$repositorycommit$" />
   </metadata>
-
   <files>
-    <file src="$eulaTxt$" />
     <file src="$projectFolder$\$id$.props" target="buildTransitive" />
     <file src="..\x86\burn.exe" target="tools\x86" />
     <file src="..\x64\burn.exe" target="tools\x64" />

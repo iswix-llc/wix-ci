@@ -7,7 +7,7 @@
     <description>$description$</description>
     <authors>$authors$</authors>
     <icon>icon.png</icon>
-    <license type="file">LICENSE.TXT</license>
+    <license type="expression">MS-RL</license>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <tags>$packageTags$</tags>
     <copyright>$copyright$</copyright>
@@ -21,9 +21,7 @@
       </group>
     </dependencies>
   </metadata>
-
   <files>
-    <file src="$eulaTxt$" />
     <file src="$iconPng$" />
     <file src="$projectFolder$\README.md" />
     <file src="$projectFolder$\build\$id$.props" target="build\" />

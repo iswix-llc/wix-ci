@@ -36,9 +36,6 @@
     <Authors>IsWiX LLC</Authors>
     <Company>IsWiX LLC</Company>
     <Copyright>Copyright (c) .NET Foundation and contributors. All rights reserved.</Copyright>
-	  <PackageEulaSource>$(RootFolder)LICENSE.TXT</PackageEulaSource>
-	  <PackageLicenseFile>LICENSE.TXT</PackageLicenseFile>
-	  <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <Product>IsWiX Toolset</Product>
     <ProjectUrl>https://github.com/iswix-llc/</ProjectUrl>
     <PackageIcon>icon.png</PackageIcon>
