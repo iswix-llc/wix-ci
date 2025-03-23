@@ -36,7 +36,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "wix", "wix\wix.csproj", "{C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WixToolset.BuildTasks", "WixToolset.BuildTasks\WixToolset.BuildTasks.csproj", "{D04EE8DF-85E5-42E5-B7B4-D064818F32C5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WixToolset.Sdk", "WixToolset.Sdk\IsWixToolset.Sdk.csproj", "{FD77501F-E720-4493-8750-5C639B3CD256}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IsWixToolset.Sdk", "WixToolset.Sdk\IsWixToolset.Sdk.csproj", "{FD77501F-E720-4493-8750-5C639B3CD256}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WixToolsetTest.Sdk", "test\WixToolsetTest.Sdk\WixToolsetTest.Sdk.csproj", "{C44BB95F-5020-4876-933C-B73A24C488FD}"
 EndProject
