@@ -48,7 +48,7 @@ jobs:
         shell: powershell 
         working-directory: src
         run: |
-          transform.ps1
+          .\Transform.ps1
 
       - name: Build wix6
         shell: cmd
