@@ -43,7 +43,7 @@ jobs:
         shell: cmd
         run: |
           xcopy /iery wix-ci\\src src
-          transform.cmd
+          src\transform.cmd
 
       - name: Build wix6
         shell: cmd
