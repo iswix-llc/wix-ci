@@ -45,9 +45,10 @@ jobs:
           xcopy /iery wix-ci\\src src
 
       - name: Transform WiX
-        shell: powershell
+        shell: powershell 
+        working-directory: src
         run: |
-          src\transform.ps1
+          transform.ps1
 
       - name: Build wix6
         shell: cmd
