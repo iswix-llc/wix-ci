@@ -1,6 +1,9 @@
 name: Build WiX Toolset v6
 
 on:
+  push:
+    branches:
+      - main
   workflow_dispatch:
 
 jobs:
@@ -40,6 +43,7 @@ jobs:
         shell: cmd
         run: |
           xcopy /iery wix-ci\\src src
+          transform.cmd
 
       - name: Build wix6
         shell: cmd
