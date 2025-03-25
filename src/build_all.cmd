@@ -22,6 +22,10 @@ call dtf\dtf.cmd %_C% || exit /b
 
 call internal\internal.cmd %_C% || exit /b
 
+:: libs
+
+call libs\libs.cmd %_C% || exit /b
+
 
 goto LExit
 
