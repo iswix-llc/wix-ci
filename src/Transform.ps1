@@ -7,6 +7,7 @@ $ErrorActionPreference = "Stop"
 Rename-Item -Path .\wix\WixToolset.Sdk -NewName IsWiXToolset.Sdk
 Rename-Item -Path .\wix\IsWixToolset.Sdk\WixToolset.Sdk.csproj -NewName IsWixToolset.Sdk.csproj
 Rename-Item -Path .\wix\IsWixToolset.Sdk\WixToolset.Sdk.nuspec -NewName IsWixToolset.Sdk.nuspec
+Rename-Item -Path .\wix\IsWixToolset.Sdk\build\WixToolset.Sdk.targets -NewName IsWixToolset.Sdk.targets
 
 
 #Update All Nuspec Files
