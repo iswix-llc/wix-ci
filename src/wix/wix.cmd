@@ -30,7 +30,7 @@ msbuild wix.sln -p:Configuration=%_C% -tl -nologo -m -warnaserror -bl:%_L%\wix_b
 
 msbuild publish_t.proj -p:Configuration=%_C% -tl -nologo -warnaserror -bl:%_L%\wix_publish.binlog || exit /b
 
-msbuild -t:Publish -p:Configuration=%_C% -tl -nologo -warnaserror IsWiXToolSet.Sdk\IsWiXToolSet.Sdk.csproj -bl:%_L%\wix_sdk_publish.binlog || exit /b
+msbuild -t:Publish -p:Configuration=%_C% -tl -nologo -warnaserror WiXToolSet.Sdk\WiXToolSet.Sdk.csproj -bl:%_L%\wix_sdk_publish.binlog || exit /b
 
 
 :: Pack
