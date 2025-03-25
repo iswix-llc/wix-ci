@@ -40,15 +40,6 @@ call burn\burn.cmd %_C% || exit /b
 call wix\wix.cmd %_C% || exit /b
 
 
-:: tools
-
-call tools\tools.cmd %_C% || exit /b
-
-
-:: ext
-
-call ext\ext.cmd %_C% || exit /b
-
 
 
 goto LExit
