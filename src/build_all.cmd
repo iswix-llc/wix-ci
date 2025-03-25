@@ -26,6 +26,16 @@ call internal\internal.cmd %_C% || exit /b
 
 call libs\libs.cmd %_C% || exit /b
 
+:: api
+
+call api\api.cmd %_C% || exit /b
+
+
+:: burn
+
+call burn\burn.cmd %_C% || exit /b
+
+
 
 goto LExit
 
