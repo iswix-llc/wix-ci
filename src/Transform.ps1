@@ -2,6 +2,9 @@ $ErrorActionPreference = "Stop"
 
 # Update Solution
 (Get-Content .\wix\wix.sln) -replace "WiXToolset.Sdk", "IsWiXToolSet.Sdk" | Set-Content .\wix\wix.sln
+(Get-Content .\wix\wix.cmd) -replace "WiXToolset.Sdk", "IsWiXToolSet.Sdk" | Set-Content .\wix\wix.cmd
+(Get-Content .\wix\pack_t.proj) -replace "WiXToolset.Sdk", "IsWiXToolSet.Sdk" | Set-Content .\wix\pack_t.proj
+(Get-Content .\wix\publish_t.proj) -replace "WiXToolset.Sdk", "IsWiXToolSet.Sdk" | Set-Content .\wix\publish_t.proj
 
 #Rebrand SDK
 Rename-Item -Path .\wix\WixToolset.Sdk -NewName IsWiXToolset.Sdk
