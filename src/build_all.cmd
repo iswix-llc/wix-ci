@@ -18,6 +18,9 @@ call build_init.cmd
 
 call dtf\dtf.cmd %_C% || exit /b
 
+:: internal
+
+call internal\internal.cmd %_C% || exit /b
 
 
 goto LExit
