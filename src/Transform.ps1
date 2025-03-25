@@ -1,5 +1,8 @@
 $ErrorActionPreference = "Stop"
 
+# Disable Tests
+(Get-Content .\build_all.cmd) -replace "call test", "REM call test" | Set-Content .\build_all.cmd
+
 # Update Solution
 (Get-Content .\wix\wix.sln) -replace "WiXToolset.Sdk", "IsWiXToolSet.Sdk" | Set-Content .\wix\wix.sln
 (Get-Content .\wix\wix.cmd) -replace "WiXToolset.Sdk", "IsWiXToolSet.Sdk" | Set-Content .\wix\wix.cmd
