@@ -1,27 +1,23 @@
 $ErrorActionPreference = "Stop"
 
-# Disable Tests
-(Get-Content .\build_all.cmd) -replace "call test", "REM call test" | Set-Content .\build_all.cmd
-
 # Update Solution
-(Get-Content .\wix\wix.sln) -replace "WiXToolset.Sdk", "IsWiXToolSet.Sdk" | Set-Content .\wix\wix.sln
-(Get-Content .\wix\wix.cmd) -replace "WiXToolset.Sdk", "IsWiXToolSet.Sdk" | Set-Content .\wix\wix.cmd
-(Get-Content .\wix\pack_t.proj) -replace "WiXToolset.Sdk", "IsWiXToolSet.Sdk" | Set-Content .\wix\pack_t.proj
-(Get-Content .\wix\publish_t.proj) -replace "WiXToolset.Sdk", "IsWiXToolSet.Sdk" | Set-Content .\wix\publish_t.proj
+$files = Get-ChildItem -Path . -File -Recurse -Exclude *.ps1 | Select-String "WixToolset.Sdk" -List | Select Path
+foreach( $file in $files)
+{
+  Write-Host $file.Path
+  (Get-Content $file.Path) -replace 'WixToolset.Sdk', 'IsWixToolset.Sdk' | Set-Content $file.Path
+}
 
-#Rebrand SDK
 Rename-Item -Path .\wix\WixToolset.Sdk -NewName IsWiXToolset.Sdk
 Rename-Item -Path .\wix\IsWixToolset.Sdk\WixToolset.Sdk.csproj -NewName IsWixToolset.Sdk.csproj
 Rename-Item -Path .\wix\IsWixToolset.Sdk\WixToolset.Sdk.nuspec -NewName IsWixToolset.Sdk.nuspec
 Rename-Item -Path .\wix\IsWixToolset.Sdk\build\WixToolset.Sdk.targets -NewName IsWixToolset.Sdk.targets
 
 
-#Update All Nuspec Files
-Get-ChildItem -recurse -Include *.nuspec |
-Foreach-Object {
-    $content = Get-Content $_.FullName
-
-(Get-Content $_.FullName) -replace 'type="file"', 'type="expression"' | Set-Content $_.FullName
-(Get-Content $_.FullName) -replace 'OSMFEULA.txt', 'MS-RL' | Set-Content $_.FullName
+$files = Get-ChildItem -Path . -File -Recurse -Exclude *.ps1 -Include *.nuspec | Select-String "OSMFEULA.txt" -List | Select Path
+foreach( $file in $files)
+{
+  Write-Host $file.Path
+ (Get-Content $file.Path) -replace 'type="file"', 'type="expression"' | Set-Content $file.Path
+ (Get-Content $file.Path) -replace 'OSMFEULA.txt', 'MS-RL' | Set-Content $file.Path
 }
-
