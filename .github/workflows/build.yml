@@ -39,16 +39,16 @@ jobs:
           reg add "HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\Windows Error Reporting\LocalDumps" /t REG_DWORD /v DumpCount /d 10 /f
           reg add "HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\Windows Error Reporting\LocalDumps" /t REG_DWORD /v DumpType /d 1
 
-      - name: Merge files
-        shell: cmd
-        run: |
-          xcopy /iery wix-ci\\src src
+      #- name: Merge files
+      #  shell: cmd
+      #  run: |
+      #    xcopy /iery wix-ci\\src src
 
-      - name: Transform WiX
-        shell: powershell 
-        working-directory: src
-        run: |
-          .\Transform.ps1
+      #- name: Transform WiX
+      #  shell: powershell 
+      #  working-directory: src
+      #  run: |
+      #    .\Transform.ps1
 
       - name: Build wix6
         shell: cmd
